@@ -1,0 +1,4 @@
+git clone (открыть репозиторий в студии)
+git checkout -b develop
+code .
+git status (проверяет на изменения) 
