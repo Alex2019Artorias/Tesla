@@ -2,3 +2,4 @@ git clone (открыть репозиторий в студии)
 git checkout -b develop
 code .
 git status (проверяет на изменения) 
+git push --set-upstream origin develop (перейти в репозитории в другую ветку) 
