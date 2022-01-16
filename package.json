@@ -9,6 +9,10 @@
     "dev": "parcel src/index.html --open"
   },
   "devDependencies": {
-    "sass": "^1.47.0"
+    "sass": "^1.47.0",
+    "@parcel/transformer-sass": "^2.2.0"
   }
 }
+
+
+
