@@ -1,0 +1,14 @@
+{
+  "name": "Tesla",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alex2019Artorias/Tesla.git",
+  "author": "Alex2019Artorias <2019.alex.kim@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html --open"
+  },
+  "devDependencies": {
+    "sass": "^1.47.0"
+  }
+}
