@@ -9,10 +9,10 @@
     "dev": "parcel src/index.html --open"
   },
   "devDependencies": {
-    "sass": "^1.47.0",
-    "@parcel/transformer-sass": "^2.2.0"
+    "@parcel/transformer-sass": "^2.2.0",
+    "sass": "^1.47.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^3.6.11"
   }
 }
-
-
-
