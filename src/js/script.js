@@ -1,4 +1,5 @@
 import Splide from '../../node_modules/@splidejs/splide';
+// import Pushbar from '../../node_modules/pushbar.js/src/pushbar';
 
 var splide = new Splide( '.splide', {
     direction: 'ttb',
@@ -11,3 +12,16 @@ var splide = new Splide( '.splide', {
   } );
   
   splide.mount();
+
+
+
+  const pushbar = new Pushbar({
+    blur:true,
+    overlay:false,
+  });
+
+  
+  //open a pushbar
+  pushbar.open('mypushbar1');	
+  //close all pushbars
+  pushbar.close();	

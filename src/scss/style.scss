@@ -1,4 +1,6 @@
 @import "../../node_modules/@splidejs/splide/dist/css/splide.min.css";
+@import "../../node_modules/pushbar.js/src/pushbar.css";
+
 
 html {
     height: 100%;
@@ -64,6 +66,15 @@ a {
 
 header {
     z-index: 2;
+}
+
+.button-menu {
+    margin-left: 200px;
+    padding-right: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(128, 128, 128);
+        font-family: 'Gotham Book';
 }
 
 /* ---------------slide------------- */

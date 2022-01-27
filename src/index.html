@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
 </head>
 <body>
     <header>
@@ -23,8 +24,31 @@
                     <a href="#" class="nav-link">Model S</a>
                     <a href="#" class="nav-link">Model S</a>
                 </nav>
+             <div class="menu">
+                <div data-pushbar-id="mypushbar1" data-pushbar-direction="right">
+        Push bar content 1
+        <button data-pushbar-close>Close</button>
+    </div>
+  
+    <!-- //CHANGE: Older version of pushbar used class="pushbar from_bottom" -->
+    <div data-pushbar-id="mypushbar2" data-pushbar-direction="bottom">
+        Push bar content 2
+        <button data-pushbar-close>Close</button>
+    </div>
+  <!-- ------------------------------------------------------ -->
+    <div class="pushbar_main_content">
+  
+        <button class="button-menu" data-pushbar-target="mypushbar1">
+        Menu
+        </button>
+  
+        <!-- <button data-pushbar-target="mypushbar2">
+        Open my pushbar 2
+        </button> -->
             </div>
-        </div>
+                </div>
+            </div>
+         </div>
     </header>
         
 
@@ -44,12 +68,14 @@
         </section>
     </main>
 
+    
 
 
 
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"> </script>
     <script type="module" src="js/script.js"></script>
 </body>
 </html>
