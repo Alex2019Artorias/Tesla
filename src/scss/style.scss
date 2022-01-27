@@ -1,3 +1,5 @@
+@import "@splidejs/splide/dist/css/splide.min.css";
+
 html {
     height: 100%;
 }
@@ -53,10 +55,21 @@ a {
     }
 }
 
+.splide,
+.splide__track, 
+.splide__list, 
+.splide__slide {
+    // height: 110%;
+}
+
+header {
+    z-index: 2;
+}
+
 /* ---------------slide------------- */
 
 .slide {
-    height: 110%;
+    // height: 110%;
     background-size: cover;
     background-position: center;
 }
