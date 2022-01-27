@@ -1,4 +1,4 @@
-import Splide from '@splidejs/splide';
+import Splide from '../../node_modules/@splidejs/splide';
 
 var splide = new Splide( '.splide', {
     direction: 'ttb',
@@ -6,6 +6,7 @@ var splide = new Splide( '.splide', {
     wheel    : true,
     arrows   : false,
     pagination: true,
+    speed: 1000,
     // autoHeight: true
   } );
   
