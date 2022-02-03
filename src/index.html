@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,15 @@
     <link rel="stylesheet" href="scss/style.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
+    <!-- Боковушка -->
+    <div data-pushbar-id="mypushbar1" data-pushbar-direction="right">
+        Push bar content 1
+        <button data-pushbar-close>Close</button>
+    </div>
+    <div class="wrapper pushbar_main_content">
+        <header>
             <div class="row">
                 <div class="logo">
                     <img src="img/tesla-9.svg" alt="" class="logo-img">
@@ -24,58 +31,42 @@
                     <a href="#" class="nav-link">Model S</a>
                     <a href="#" class="nav-link">Model S</a>
                 </nav>
-             <div class="menu">
-                <div data-pushbar-id="mypushbar1" data-pushbar-direction="right">
-        Push bar content 1
-        <button data-pushbar-close>Close</button>
-    </div>
-  
-    <!-- //CHANGE: Older version of pushbar used class="pushbar from_bottom" -->
-    <div data-pushbar-id="mypushbar2" data-pushbar-direction="bottom">
-        Push bar content 2
-        <button data-pushbar-close>Close</button>
-    </div>
-  <!-- ------------------------------------------------------ -->
-    <div class="pushbar_main_content">
-  
-        <button class="button-menu" data-pushbar-target="mypushbar1">
-        Menu
-        </button>
-  
-        <!-- <button data-pushbar-target="mypushbar2">
-        Open my pushbar 2
-        </button> -->
-            </div>
+                <div class="menu">
+                    <a href="#" class="nav-link menu-link">Shop</a>
+                    <a href="#" class="nav-link menu-link">Account</a>
+                    <a href="" class="nav-link menu-link" data-pushbar-target="mypushbar1">Menu</a>
                 </div>
             </div>
-         </div>
-    </header>
-        
 
-    <!-- <section class="slide slide-1 splide__slide">1</section> -->
+        </header>
 
-    <main class="splide">
-        <section class="splide__track">
-            <nav class="splide__list">
-                <section class="slide slide-1 splide__slide">1</section>
-                <section class="slide slide-2 splide__slide">2</section>
-                <section class="slide slide-3 splide__slide">3</section>
-                <section class="slide slide-4 splide__slide">4</section>
-                <section class="slide slide-5 splide__slide">5</section>
-                <section class="slide slide-6 splide__slide">6</section>
-                <section class="slide slide-7 splide__slide">7</section>
-            </nav>
-        </section>
-    </main>
 
-    
+        <!-- <section class="slide slide-1 splide__slide">1</section> -->
+
+        <main class="splide">
+            <section class="splide__track">
+                <nav class="splide__list">
+                    <section class="slide slide-1 splide__slide">1</section>
+                    <section class="slide slide-2 splide__slide">2</section>
+                    <section class="slide slide-3 splide__slide">3</section>
+                    <section class="slide slide-4 splide__slide">4</section>
+                    <section class="slide slide-5 splide__slide">5</section>
+                    <section class="slide slide-6 splide__slide">6</section>
+                    <section class="slide slide-7 splide__slide">7</section>
+                </nav>
+            </section>
+        </main>
 
 
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"> </script>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"> </script>
     <script type="module" src="js/script.js"></script>
+
 </body>
+
 </html>

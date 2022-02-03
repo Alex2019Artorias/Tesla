@@ -1,7 +1,6 @@
 @import "../../node_modules/@splidejs/splide/dist/css/splide.min.css";
 @import "../../node_modules/pushbar.js/src/pushbar.css";
 
-
 html {
     height: 100%;
 }
@@ -17,24 +16,22 @@ body {
 .container {
     max-width: 80%;
     margin: 0 auto;
-
 }
 
 header {
     align-items: center;
-    position: fixed; 
-    width: 100%; 
+    position: fixed;
+    width: 100%;
 }
 
 .logo-img {
     padding-top: 20px;
     max-width: 150px;
-    
 }
 
-// .logo {
-
-// }
+.logo {
+    width: 20%;
+}
 
 a {
     text-decoration: none;
@@ -43,23 +40,36 @@ a {
 .row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0 1%;
+    
 }
 
 .navigation {
-    margin-left: 25%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    width: 60%;
+}
 
-    .nav-link {
-        padding-right: 40px;
-        font-size: 14px;
-        font-weight: 500;
-        color: rgb(128, 128, 128);
-        font-family: 'Gotham Book';
-    }
+.nav-link {
+    padding-right: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    font-family: "Gotham Book";
+}
+
+.menu {
+    // width: 20%;  
+}
+.menu-link {
+    font-size: 18px;
 }
 
 // .splide,
-// .splide__track, 
-// .splide__list, 
+// .splide__track,
+// .splide__list,
 // .splide__slide {
 //     // height: 110%;
 // }
@@ -68,14 +78,7 @@ header {
     z-index: 2;
 }
 
-.button-menu {
-    margin-left: 200px;
-    padding-right: 40px;
-        font-size: 14px;
-        font-weight: 500;
-        color: rgb(128, 128, 128);
-        font-family: 'Gotham Book';
-}
+
 
 /* ---------------slide------------- */
 
@@ -112,5 +115,3 @@ header {
 .slide-7 {
     background-image: url("../img/slide-7-Accessories.png");
 }
-
-
