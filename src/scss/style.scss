@@ -1,6 +1,10 @@
 @import "../../node_modules/@splidejs/splide/dist/css/splide.min.css";
 @import "../../node_modules/pushbar.js/src/pushbar.css";
 
+img {
+    max-width: 100%;
+}
+
 html {
     height: 100%;
 }
@@ -53,18 +57,30 @@ a {
 }
 
 .nav-link {
-    padding-right: 40px;
-    font-size: 14px;
-    font-weight: 500;
     color: rgb(128, 128, 128);
     font-family: "Gotham Book";
+    padding: 4px;
+    transition: background-color .5s ease-out;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: rgba(0,0,0,.05);
+    }
+}
+
+.nav-link-header {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 40px;
+    padding: 6px;
 }
 
 .menu {
     // width: 20%;  
 }
-.menu-link {
+.menu-nav {
     font-size: 18px;
+    max-width: 80%;
 }
 
 // .splide,
@@ -77,6 +93,26 @@ a {
 header {
     z-index: 2;
 }
+
+.flex-right {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 40px;
+}
+
+.img-cross-svg{
+    max-width: 10%;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.menu-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+}
+
 
 
 
